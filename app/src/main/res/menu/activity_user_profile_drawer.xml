@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Notification"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/Setting"
+            android:icon="@drawable/setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/selling"
+            android:icon="@drawable/sell1"
+            android:title="sell" />
+        <item
+            android:id="@+id/retreieve"
+            android:icon="@drawable/retrieve"
+            android:title="Retrieve" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/about"
+                android:title="About"  />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/help"
+                android:title="Help"/>
+        </menu>
+    </item>
+
+</menu>

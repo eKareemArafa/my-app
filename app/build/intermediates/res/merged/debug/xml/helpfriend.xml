@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<CheckBoxPreference
+            androidLkey="Erase Data"
+            android:title="Erase Data"
+            android:id="@+id/EraseData"
+            android:summary="Erase All Data From The Stolen Mobile  "
+            android:defaultValue="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <CheckBoxPreference
+        androidLkey="Location "
+        android:title="Locate Mobile"
+        android:id="@+id/LocateMobile"
+        android:summary="Locate on Google Map where the Mobile is located"
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBoxPreference
+        androidLkey="alert"
+        android:title="Alert Sounds"
+        android:id="@+id/AlertSound"
+        android:summary="plays an alert sound on the lost phone"
+        android:defaultValue="false" />
+</PreferenceScreen>

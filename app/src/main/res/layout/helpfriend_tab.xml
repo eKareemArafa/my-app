@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:id="@+id/rlHelp"
+    android:background="@drawable/rectangle"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+    >
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/image"
+    android:id="@+id/HelpFriend_image"
+    android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/NameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="110dp"
+
+      />
+    <TextView
+        android:id="@+id/NumTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/NameTxt"
+        android:layout_marginLeft="110dp"
+
+        />
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rlHelpControl"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Erase Data"
+                android:textSize="18dp"
+                android:id="@+id/tvErase"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Erase All Data From The Stolen Mobile"
+                android:textSize="14dp"
+                android:id="@+id/tverase"
+                android:layout_below="@+id/tvErase"
+                android:layout_marginLeft="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CB_Erase"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#d6d6d6"
+                android:id="@+id/view1"
+                android:layout_below="@id/tverase"
+                android:layout_marginTop="@dimen/Mbtween"
+/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locate"
+                android:paddingTop="5dp"
+                android:textSize="18dp"
+                android:layout_below="@id/view1"
+                android:id="@+id/tvLocate"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Locate on Google Map where the Mobile is located"
+                android:textSize="14dp"
+                android:id="@+id/tvlocate"
+                android:layout_below="@+id/tvLocate"
+                android:layout_marginLeft="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CB_Locate"
+                android:paddingTop="5dp"
+                android:layout_below="@id/view1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp" />
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activation">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="?attr/colorPrimary"
+            app:title="Activation"
+            android:paddingLeft="10dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.merna.app_name.SignUpActivity"
+        tools:showIn="@layout/activation"
+        android:background="@color/backg"
+       >
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An activition code was sent to your mobile phone, enter the code below "
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/titlesize"
+            android:padding="10dp"
+            android:id="@+id/textView"
+            android:textColor="@color/colortext"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="@dimen/paddingedit"
+            android:hint="Enter an activation code"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:inputType="number"
+            android:textSize="@dimen/textsize"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/edittext_activation"
+            android:background="@drawable/edittext"
+            android:textColor="@color/text"/>
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/terms_checkbox"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/textsize"
+            android:layout_marginTop="20dp"
+            android:text="I agree to the terms of use"
+            android:textColor="@color/colortext"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@color/backg">
+
+
+            <Button
+                android:id="@+id/back"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorwhite"
+                android:layout_marginRight="10dp"
+                android:text="BACK"
+                android:layout_toStartOf="@+id/next"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorTextHint"
+                />
+
+            <Button
+                android:id="@+id/next"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorwhite"
+                android:text="NEXT"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold"
+                android:onClick="active"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorTextHint"
+                />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

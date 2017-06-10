@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    >
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Enter Fingerprint"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</android.support.design.widget.AppBarLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+
+    >
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp"
+    android:text="Enter your fingerprint to continue"
+    android:textSize="22dp"
+        android:paddingLeft="20dp"
+    android:id="@+id/altermesage"/>
+    <Button
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_below="@+id/altermesage"
+        android:background="@drawable/finger"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/sensor"
+    />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/sensor"
+        android:paddingTop="30dp"
+        android:paddingLeft="25dp"
+        android:layout_toRightOf="@id/sensor"
+        android:textSize="20dp"
+        android:text="Touch Sensor"
+        android:layout_below="@+id/altermesage"
+        />
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colortext">#1d345c</color>
+    <color name="text">#277493</color>
+    <color name="background">#141450</color>
+    <color name="backg">#eaf4f5f5</color>
+    <color name="title">#ba1d3271</color>
+    <color name="btn_Disable">#868990</color>
+
+
+    <color name="colorPrimaryDark">#2d9a9f</color>
+    <color name="colorAccent">#3e497c</color>
+    <color name="colorPrimary">#3abdc4</color>
+    <color name="colorFloatBtn">#33bcc3</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorTextHint">#3e497c</color>
+
+    <color name="Button">#a0021758</color>
+    <color name="colorAccentTrans">#c341c7ce</color>
+
+</resources>

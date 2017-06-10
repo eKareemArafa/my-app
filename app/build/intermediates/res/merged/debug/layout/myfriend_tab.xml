@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment1"
+    android:background="@color/backg"
+    android:paddingTop="10dp"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addfriendlist"
+        android:src="@drawable/friends"
+        android:onClick="addf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/contacts_list"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:visibility="invisible"
+            >
+
+        </ListView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/userss"
+    android:layout_centerInParent="true"
+    android:id="@+id/addfriendImage"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addfriendImage"
+        android:text="No Friend List"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/addfriendtext"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/SignUp_txt"
+        android:background="@drawable/ppt1"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:paddingLeft="24dp"
+        android:paddingBottom="56dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/llSignupContent"
+        android:paddingRight="24dp">
+
+
+
+
+
+        <!-- Gmail Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+
+                  android:id="@+id/input_Gmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/gmal"
+                  android:drawablePadding="@dimen/drawpadding"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Gmail"
+                android:layout_marginTop="10dp"
+ />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<android.support.design.widget.TextInputEditText
+             android:id="@+id/input_FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="@dimen/drawpadding"
+                android:inputType="textEmailAddress"
+                android:hint="User Name"
+
+              />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Phone_Number Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pho"
+                android:drawablePadding="@dimen/drawpadding"
+                android:inputType="phone"
+                android:hint="Enter Phone Number"
+ />
+</android.support.design.widget.TextInputLayout>
+
+        <!-- NAtional_ID Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_National_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_nationalID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/idf"
+                android:drawablePadding="@dimen/drawpadding"
+                android:inputType="number"
+                android:hint="Enter National ID"
+               />
+</android.support.design.widget.TextInputLayout>
+
+
+        <!-- Enter_pass Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pas"
+                android:drawablePadding="@dimen/drawpadding"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+           />
+</android.support.design.widget.TextInputLayout>
+
+        <!-- confirm_pass Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/repasd"
+                android:drawablePadding="@dimen/drawpadding"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+            />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+<!-- SignUP Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:text="Sign Up"
+            android:textColor="@color/colorwhite"
+            android:background="@color/colorTextHint"
+            android:textSize="20dp"
+
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>
